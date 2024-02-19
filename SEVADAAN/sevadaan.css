@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+.wrapper{
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+    background-color:#f8f8f8;
+}
+.container{
+    /* height:100%; */
+    max-width:1200px;
+    margin:0 auto;
+    /* padding:20px; */
+    display: grid;
+    place-items: center;
+
+}
+.navbar{
+    display: flex;
+    /* width:100vh; */
+    justify-content:space-between;
+    align-items:center;
+    /* padding-top:1rem; */
+    background-color:white;
+    overflow: hidden;
+     position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo-container{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+}
+.logo-text{ 
+    margin-left:-1.2rem;
+    font-size :20px;
+    font-family: 'Permanent Marker', cursive;
+}
+.nav-items{
+    display:flex;
+    justify-content:end;
+    gap:2rem;
+    padding:0 4rem;
+}
+.nav-items div{
+        font-size:20px;
+        font-weight:500px;
+        cursor:pointer;  
+}
+.nav-items div a{
+color: black;
+} 
+
+a{
+text-decoration:none;
+}
+.nav-items div:hover{
+font-weight:bold;
+transition:0.8s;
+}
+.ka{
+    margin:40px 0;
+    text-align:center;
+    margin-bottom: 20px;
+    font-size:3rem;
+    
+
+}
+/* #gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align: center;
+    margin-left: auto;  
+    margin-right:5px;  
+    border: 3px ridge brown;
+} */
+/* .my{
+    width:500px;
+    height:500px;
+} */
+#gallery{
+    display: grid;
+    place-items: center;
+    box-shadow:20px 10px lightblue;
+    max-width:794px;
+    max-height: 500px;
+box-shadow: 20px 29px 10px 4px rgba(82,84,79,0.83);
+}
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  
+  .slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slideshow img:first-child {
+    opacity: 1;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .slideshow img {
+    animation: slide 5s infinite;
+  }
+  #s{
+    font-family: 'Merriweather', serif;
+    text-align: justify;
+  }
+  .role{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 300;
+    color:red;
+}
+#e{
+  grid-column-start:2;
+  grid-column-end:4;
+} 
+.video-container {
+  position: relative;
+  width:600px; /* Adjust width as needed */
+}
+
+.video-container video {
+  width:100%;
+  height: auto;
+  cursor: pointer; /* Change cursor to pointer */
+}
+.hero-section{
+  
+  display:flex;
+  position:relative;
+  justify-content:space-evenly;
+  align-items: center;
+ 
+  gap:5rem;
+  margin:4rem auto;
+  padding:0 1rem;
+  padding-bottom:8rem; 
+}
+.faded-text{
+  user-select:none;
+  font-size:3rem;
+  color: rgb(240, 160, 63);
+  bottom:-16%;
+  left:-5%;
+  font-weight:bold;
+  transition:all 3s;
+
+}
+.hero-section-left{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:2rem;
+  
+
+}
+.hero-section-heading{
+  display:flex;
+  font-size:35px;
+  color:rgb(9, 2, 31);
+  font-weight:450;
+  justify-content: center;
+  align-items: center;
+
+}
+.hero-section-description{
+  color: brown;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+}
+.btn-pink {
+  background-color: var(--bgOrange);
+  width: fit-content;
+  color:brown;
+  padding: 0.8rem 2.3rem;
+  box-shadow: 5px 5px 7px 0px #0000003f;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 1;
+}
+.btn-pink::before {
+  content: "";
+  position: absolute;
+  background-color:brown;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+}
+.btn-pink:hover::before {
+  transform: scaleX(1);
+}
+.btn-pink:hover {
+  border: solid 3px orange;
+  color: greenyellow;
+}
+#btn{
+  /* color:green;
+  font-weight:700; */
+  background-color:pink;
+
+}
+#t{
+  font-weight:400;
+}
+.project-section{
+  background-color:rgb(248, 95, 95);
+  margin:4rem;
+}
